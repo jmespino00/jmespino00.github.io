@@ -12,6 +12,8 @@
 }
 
 .flex-container > div {
+  text-align: center;
+  flex: 1;
   background-color: #f1f1f1;
   margin: 10px;
   padding: 20px;
@@ -26,6 +28,8 @@
 }
 
 .flex-container1 > div {
+    text-align: center;
+    flex: 1;
     background-color: #f1f1f1;
     margin: 10px;
     padding: 20px;
@@ -39,14 +43,62 @@ body {
   background-size: cover;
 }
 
+h1{
+  font-family:'Courier New', Courier, monospace;
+  font-size: 40;
+  color: white;
+  background-color: maroon;
+  padding: 10px;
+}
+
+
 h2{
     font-size: 20px;
 }
-p {color: red}
-p1 {
-    font-size: 20px;
-    color: navy
+p {
+  font-style: oblique;
+  font-size: small;
+  color: red
 }
+
+
+a {
+  font-style: oblique;
+  font-size: small;
+  color: red
+}
+
+p1 {
+  font-size: 20px;
+  background-color: navy;
+  font-family:Arial, Helvetica, sans-serif;
+  color: white
+}
+
+.att {
+  display: flex;
+}
+
+.att > div {
+  text-align: center;
+  flex: 1;
+  padding: 10px;
+}
+
+.lower {
+  display: flex;
+  align-items: center; 
+}
+
+.text {
+  margin-left: 10px; 
+}
+
+
+.left-align{
+  text-indent: 100px;
+}
+
 </style>
 </head>
 
@@ -59,7 +111,7 @@ p1 {
     <center><h2>Previous Projects</h2></center>
     <div = class="flex-container">
         <div>CMSC 12 Project: Puzzle</div>
-        <div>CMSC 22 Project: Blooms and Bees</div>
+        <div>CMSC 22 Project: Blooms && Bees</div>
     </div>
     <br>
     <div = class="flex-container1">
@@ -68,17 +120,25 @@ p1 {
     </div>
 
 
-    <p1>Python Programming</p1><br>
-    <p1>Java Programming</p1><br>
-
-    <p1>Name: Jannah Marssell B. Espino</p1><br>
-    <p1>Batch: 2020</p1><br>
-    <p1>Degree Program: BS Computer Science</p1>
-
+    <div class="att">
+      <div>
+        <p1>Python Programming</p1><br>
+        <p1>Java Programming</p1><br>
+      </div>
+      <div>
+        <p1>My name is Jannah Marssell B. Espino, a Batch 2020 student at the University of the Philippines - Los Baños, and I am taking up BS Computer Science.</p1>
+      </div>
+    </div>
     <hr />
 
-    <p>Email: jbespino@up.edu.ph</p>
-    <p>Contact Number: 09672486132</p>
+
+    <div class="lower">
+      <img class="one" src="doggo.jpg" alt="doggo" width="100" height="70">
+      <div class="text">
+        <a href="https://mail.google.com/mail?hl=en-GB">Email: jbespino@up.edu.ph</a>
+        <p>Contact Number: 09672486132</p>
+      </div>
+    </div>
   </body>
 
 </html>

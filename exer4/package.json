@@ -1,0 +1,17 @@
+{
+  "name": "exer4",
+  "version": "1.0.0",
+  "description": "exer_04",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Espino, Jannah Marssell",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "snake-case": "^4.0.0",
+    "uuid": "^9.0.1",
+    "validator": "^13.11.0"
+  }
+}

@@ -1,145 +1,38 @@
 <!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="style.css">
-<style>
 
+<html> 
 
-.flex-container {
-  display: flex;
-  background-color: maroon;
-  justify-content: center;
-}
+    <head>
 
-.flex-container > div {
-  text-align: center;
-  flex: 1;
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-}
+        <title>Your Favorite Food</title>
 
+    </head>
 
-.flex-container1{
-    display: flex;
-    background-color: maroon;
-    justify-content: center;
-}
+    <body>
 
-.flex-container1 > div {
-    text-align: center;
-    flex: 1;
-    background-color: #f1f1f1;
-    margin: 10px;
-    padding: 20px;
-    font-size: 25px;
-}
+    <form>
 
-body {
-  background-image: url('dog.jpg');
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
+        <label for="foodName">Food Name:</label>
+        <input type="text" id="foodName" name="foodName"><br>
 
-h1{
-  font-family:'Courier New', Courier, monospace;
-  font-size: 40;
-  color: white;
-  background-color: maroon;
-  padding: 10px;
-}
+        <label for="desc">Description:</label>
+        <input type="text" id="desc" name="desc"><br>
 
+        <label for="img">Add Image URL:</label>
+        <input type="url" id="img" name="img">
 
-h2{
-    font-size: 20px;
-}
-p {
-  font-style: oblique;
-  font-size: small;
-  color: red
-}
+        <label for="rank">Rank:</label>
+        <input type="number" id="rank" name="rank" min="1" max="100">
 
+        <input type="submit" value="Submit">
 
-a {
-  font-style: oblique;
-  font-size: small;
-  color: red
-}
+        <button id="remove-food">Delete</button>
+        <script src="http://localhost:3000/form.js">
+            
+        </script>
 
-p1 {
-  font-size: 20px;
-  background-color: navy;
-  font-family:Arial, Helvetica, sans-serif;
-  color: white
-}
-
-.att {
-  display: flex;
-}
-
-.att > div {
-  text-align: center;
-  flex: 1;
-  padding: 10px;
-}
-
-.lower {
-  display: flex;
-  align-items: center; 
-}
-
-.text {
-  margin-left: 10px; 
-}
-
-
-.left-align{
-  text-indent: 100px;
-}
-
-</style>
-</head>
-
-  <body>
-    <center><img class="one" src="doggo.jpg" alt="doggo" width="200" height="150"></center>
-    <center><h1>Jannah Espino</h1></center>
-    <center><img class="two" src="me.jpg" alt="me" width="350" height="300"></center>
-
-
-    <center><h2>Previous Projects</h2></center>
-    <div = class="flex-container">
-        <div>CMSC 12 Project: Puzzle</div>
-        <div>CMSC 22 Project: Blooms && Bees</div>
-    </div>
-    <br>
-    <div = class="flex-container1">
-        <div>Skills</div>
-        <div>Autobiography</div>
-    </div>
-
-
-    <div class="att">
-      <div>
-        <p1>Python Programming</p1><br>
-        <p1>Java Programming</p1><br>
-      </div>
-      <div>
-        <p1>My name is Jannah Marssell B. Espino, a Batch 2020 student at the University of the Philippines - Los Baños, and I am taking up BS Computer Science.</p1>
-      </div>
-    </div>
-    <hr />
-
-
-    <div class="lower">
-      <img class="one" src="doggo.jpg" alt="doggo" width="100" height="70">
-      <div class="text">
-        <a href="https://mail.google.com/mail?hl=en-GB">Email: jbespino@up.edu.ph</a>
-        <p>Contact Number: 09672486132</p>
-      </div>
-    </div>
-  </body>
+    </form>
+        
+    </body>
 
 </html>
-
